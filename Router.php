@@ -14,10 +14,10 @@
 
         public function comprobarRutas() {
 
-            // Arreglo de rutas protegidas
-            $rutas_protegidas = ['/',
+            // // Arreglo de rutas protegidas
+            // $rutas_protegidas = ['/',
                                 
-            ];
+            // ];
 
             $urlActual = $_SERVER['PATH_INFO'] ?? '/';
             // debuguear($urlActual);
