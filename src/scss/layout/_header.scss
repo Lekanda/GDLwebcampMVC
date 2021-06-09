@@ -1,20 +1,85 @@
-.contenido-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    h1 {
-        text-align: left;
-        color: $blanco;
-        font-weight: $bold;
-        line-height: 2;
-        max-width: 60rem;
-    }
-}
 .hero{
     background-image: url('../img/destacada2.jpg');
     height: 100vh;
     /* background-repeat: no-repeat; */
     background-position: top center;
     background-size: cover;
-  }
+
+    .contenido-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 40px;
+    
+        h1 {
+            text-align: left;
+            color: $blanco;
+            font-weight: $bold;
+            line-height: 2;
+            max-width: 60rem;
+        }
+        @include tablet{
+            padding-top: 10px;
+        }
+        .redes-sociales{
+            text-align: center;
+        }
+        .redes-sociales a{
+            color: $grisOscuro;
+            font-size: 2.9rem;
+            margin-right: 20px;
+        }
+        .redes-sociales a:last-child{
+            margin-right: 0;
+        }
+        .informacion-evento{
+            text-align: center;
+            color: $grisOscuro;
+        }
+        @include tablet {
+            .informacion-evento{
+              width: 70%;
+              margin: 0 auto;
+              margin-top: 50px;
+            }
+        }
+        .informacion-evento p{
+            margin: 0;
+            display: inline-flex;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        .informacion-evento p i{
+            color: #fe4918;
+            margin-right: 5px;
+            font-size: 4rem;
+        }
+        .fecha{
+            float: left;
+        }
+        .ciudad{
+            float: right;
+            text-align: right;
+        }
+        .slogan{
+            text-transform: none !important;
+        }
+        .slogan span{
+            font-weight: $bold;
+        }
+        .nombre-sitio{
+            font-size: 5.9vw;
+            text-transform: uppercase;
+            font-family: $fuente_terciaria;
+        }
+        @include tablet{
+            .nombre-sitio{
+                font-size: 11.5vw;
+                margin: 0;
+                line-height: 1;
+            }
+        }
+    }
+}
+
+
