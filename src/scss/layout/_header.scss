@@ -1,0 +1,20 @@
+.contenido-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h1 {
+        text-align: left;
+        color: $blanco;
+        font-weight: $bold;
+        line-height: 2;
+        max-width: 60rem;
+    }
+}
+.hero{
+    background-image: url('../img/destacada2.jpg');
+    height: 100vh;
+    /* background-repeat: no-repeat; */
+    background-position: top center;
+    background-size: cover;
+  }
