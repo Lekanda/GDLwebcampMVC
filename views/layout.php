@@ -37,8 +37,8 @@
         </div>
     </header>
 
-    <div class="barra">
-        <div class="contenedor barra-navegacion">
+    <div class="barra barra-navegacion">
+        <div class="contenedor">
             <div class="logo">
                 <img src="../build/img/logo.svg" alt="Logo de la barra de Navegacion">
             </div>
@@ -53,10 +53,9 @@
                 <a href="#">Invitado</a>
                 <a href="#">Reservas</a>
             </nav>
-        </div>
-        <!--Cierre Contenedor-->
-    </div>
-    <!--Cierre Barra-->
+        </div><!--Cierre Contenedor-->
+    </div><!--Cierre Barra-->
+    
 
 
 

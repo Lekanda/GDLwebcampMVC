@@ -1,5 +1,6 @@
 /** Barra **/
 .barra{
+    display: flex;
     background-color: #353535;
     padding: 20px 0;
 
@@ -16,7 +17,7 @@
         }
     }
     .barra-navegacion{
-        height: 66px;
+        height: auto;
     }
 
 }
@@ -25,6 +26,7 @@
   /* Navegacion Principal */
 .navegacion-principal{
     display: none;
+    
 }
 .navegacion-principal a{
     font-family: 'Oswald', sans-serif;
@@ -52,13 +54,14 @@
 @include tablet {
     .navegacion-principal{
       width: 67%;
-      float: right;
       text-align: right;
-      display: block;
+    //   flex-direction: row;
+      display: inline-block;
+    //   justify-content: flex-end;
+
     }
     .navegacion-principal a{
       padding: 10px 10px;
-      display: inline-block;
       width: auto;
       display: inline-block;
       text-align: center;
