@@ -63,18 +63,18 @@
 
 
 
-    <!-- <footer class="footer seccion">
+    <footer class="footer seccion">
         <div class="contenedor contenedor-footer">
-            <nav data-cy="navegacion-footer" class="navegacion">
-                <a href="/receta/crear">+ Receta</a>
-                <a href="/categoria/crear">+ Categoria</a>
-                <a href="/documentacion">Doc</a>
-                <a href="/contacto">Contacto</a>
+            <nav class="navegacion">
+                <a href="#">+ Receta</a>
+                <a href="#">+ Categoria</a>
+                <a href="#">Doc</a>
+                <a href="#">Contacto</a>
             </nav>
         </div>
 
         <p data-cy="copyright" class="copyright">Todos los derechos Reservados <?php echo date('Y'); ?> &copy; Lekanda Dev</p>
-    </footer> -->
+    </footer>
     <script src="http://192.168.2.3/GDLwebcampMVC/public/build/js/bundle.min.js"></script>
 
 
