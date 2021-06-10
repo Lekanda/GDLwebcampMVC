@@ -1,11 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,400;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 // Fuentes
-$fuente_principal: 'PT Sans Narrow', sans-serif;
-$fuente_secundaria:'Fugaz One', cursive;;
-$fuente_terciaria:'Fjalla One', sans-serif;
+$fuente_principal: 'Open Sans', sans-serif;
+$fuente_secundaria: 'Oswald', sans-serif;
+$fuente_terciaria: 'PT Sans', sans-serif;
+// Fuentes
+$delgada: 300;
+$regular : 400;
+$bold: 700;
+$extra-bold: 800;
+$black: 900;
 
 
 // Tamaño de Media Queries
@@ -28,9 +33,3 @@ $rojo: rgb(189,7,7);
 
 $separacion: 5rem;
 
-// Fuentes
-
-$delgada: 300;
-$regular : 400;
-$bold: 700;
-$black: 900

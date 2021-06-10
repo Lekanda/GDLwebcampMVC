@@ -32,9 +32,31 @@
                     <h1 class="nombre-sitio">GdlWebCamp</h1>
                     <p class="slogan">La mejor conferencia de <span>Diseño Web</span></p>
                 </div>
-            </div><!--.hero-->
+            </div>
+            <!--.hero-->
         </div>
     </header>
+
+    <div class="barra">
+        <div class="contenedor barra-navegacion">
+            <div class="logo">
+                <img src="../build/img/logo.svg" alt="Logo de la barra de Navegacion">
+            </div>
+            <div class="menu-movil">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="navegacion-principal">
+                <a href="#">Conferencia</a>
+                <a href="#">Calendario</a>
+                <a href="#">Invitado</a>
+                <a href="#">Reservas</a>
+            </nav>
+        </div>
+        <!--Cierre Contenedor-->
+    </div>
+    <!--Cierre Barra-->
 
 
 

@@ -1,0 +1,68 @@
+/** Barra **/
+.barra{
+    background-color: #353535;
+    padding: 20px 0;
+
+    .logo{
+        width: 80%;
+        float: left;
+    }
+    .logo img{
+        width: 100%;
+    }
+    @include tablet{
+        .logo{
+            width: 33%;
+        }
+    }
+    .barra-navegacion{
+        height: 66px;
+    }
+
+}
+
+  
+  /* Navegacion Principal */
+.navegacion-principal{
+    display: none;
+}
+.navegacion-principal a{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    transition: all .6s ease;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom:20px ;
+}
+.navegacion-principal a:hover{
+    background-color: #fe4918;
+}
+.navegacion-principal a:last-child{
+    border: 2px solid #fe4918;
+    color: #fe4918;
+}
+.navegacion-principal a:last-child:hover{
+    border: 2px solid #fe4918;
+    color: white;
+}
+@include tablet {
+    .navegacion-principal{
+      width: 67%;
+      float: right;
+      text-align: right;
+      display: block;
+    }
+    .navegacion-principal a{
+      padding: 10px 10px;
+      display: inline-block;
+      width: auto;
+      display: inline-block;
+      text-align: center;
+      margin:0 10px 0 0;
+
+    }
+}
