@@ -6,7 +6,7 @@
 
 <section class="programa">
     <div class="contenedor-video">
-        <video autoplay loop  muted>
+        <video autoplay loop muted>
             <source src="/video/video.mp4" type="video/mp4">
             <source src="/video/video.webm" type="video/webm">
             <source src="/video/video.ogv" type="video/ogv">
@@ -23,7 +23,7 @@
                     <a href="#seminarios"><i class="fas fa-university"></i>Seminarios</a>
                 </nav>
 
-                <div id="talleres" class="info-curso ocultar clearfix">
+                <div id="talleres" class="info-curso ocultar">
                     <div class="detalle-evento">
                         <h3>HTML5, CSS3, JavaScript</h3>
                         <p><i class="fas fa-clock"></i> 16:00</p>
@@ -36,10 +36,52 @@
                         <p><i class="fas fa-calendar"></i> 10 de Dic</p>
                         <p><i class="fas fa-user"></i> Andres Bernaola Olivares</p>
                     </div>
-                    <a href="#" class="button float-right">Ver Todos</a>
+                    <a href="#" class="button flex-right">Ver Todos</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 <!--Seccion de Programa-->
+
+<section class="invitados contenedor seccion">
+    <h2>Nuestros invitados</h2>
+    <ul class="lista-invitados">
+        <li>
+            <div class="invitado invitado1">
+                <img src="../build/img/invitado1.jpg" alt="Invitado 1">
+                <p>Rafael Bautista</p>
+            </div>
+        </li>
+        <li>
+            <div class="invitado">
+                <img src="../build/img/invitado2.jpg" alt="Invitado 2">
+                <p>Shari Herrera</p>
+            </div>
+        </li>
+        <li>
+            <div class="invitado">
+                <img src="../build/img/invitado3.jpg" alt="Invitado 3">
+                <p>Gregorio Sanchez</p>
+            </div>
+        </li>
+        <li>
+            <div class="invitado">
+                <img src="../build/img/invitado4.jpg" alt="Invitado 4">
+                <p>Susana Rivera</p>
+            </div>
+        </li>
+        <li>
+            <div class="invitado">
+                <img src="../build/img/invitado5.jpg" alt="Invitado 5">
+                <p>Harold Garcia</p>
+            </div>
+        </li>
+        <li>
+            <div class="invitado">
+                <img src="../build/img/invitado6.jpg" alt="Invitado 6">
+                <p>Susan Sanchez</p>
+            </div>
+        </li>
+    </ul>
+</section>

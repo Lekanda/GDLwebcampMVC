@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GDL WebCamp</title>
+    <title>GDL WebCamp MVC</title>
 
 
     <script src="https://kit.fontawesome.com/9b21360d5e.js" crossorigin="anonymous"></script>
@@ -63,18 +63,11 @@
 
 
 
-    <footer class="footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="#">+ Receta</a>
-                <a href="#">+ Categoria</a>
-                <a href="#">Doc</a>
-                <a href="#">Contacto</a>
-            </nav>
-        </div>
+    <!-- <footer class="footer seccion">
+        
 
         <p data-cy="copyright" class="copyright">Todos los derechos Reservados <?php echo date('Y'); ?> &copy; Lekanda Dev</p>
-    </footer>
+    </footer> -->
     <script src="http://192.168.2.3/GDLwebcampMVC/public/build/js/bundle.min.js"></script>
 
 
