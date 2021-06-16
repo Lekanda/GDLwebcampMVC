@@ -117,7 +117,7 @@
             <ul>
               <li>Bocadillos Gratis</li>
               <li>Todas las Conferencias</li>
-              <li>Bocadillos todos los Talleres</li>
+              <li>Todos los Talleres</li>
             </ul>
             <a href="#" class="button flex-center hollow">Comprar</a>
           </div>
@@ -130,7 +130,7 @@
             <ul>
               <li>Bocadillos Gratis</li>
               <li>Todas las Conferencias</li>
-              <li>Bocadillos todos los Talleres</li>
+              <li>Todos los Talleres</li>
             </ul>
             <a href="#" class="button flex-center">Comprar</a>
           </div>
@@ -143,7 +143,7 @@
             <ul>
               <li>Bocadillos Gratis</li>
               <li>Todas las Conferencias</li>
-              <li>Bocadillos todos los Talleres</li>
+              <li>Todos los Talleres</li>
             </ul>
             <a href="#" class="button flex-center hollow">Comprar</a>
           </div>
