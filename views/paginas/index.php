@@ -108,47 +108,90 @@
 <section class="precios seccion">
     <h2>Precios</h2>
     <div class="contenedor">
-      <ul class="lista-precios">
+        <ul class="lista-precios">
 
-        <li>
-          <div class="tabla-precio">
-            <h3>Pase por día</h3>
-            <p class="numero">30€</p>
-            <ul>
-              <li>Bocadillos Gratis</li>
-              <li>Todas las Conferencias</li>
-              <li>Todos los Talleres</li>
-            </ul>
-            <a href="#" class="button flex-center hollow">Comprar</a>
-          </div>
-        </li>
+            <li>
+                <div class="tabla-precio">
+                    <h3>Pase por día</h3>
+                    <p class="numero">30€</p>
+                    <ul>
+                        <li>Bocadillos Gratis</li>
+                        <li>Todas las Conferencias</li>
+                        <li>Todos los Talleres</li>
+                    </ul>
+                    <a href="#" class="button flex-center hollow">Comprar</a>
+                </div>
+            </li>
 
-        <li>
-          <div class="tabla-precio">
-            <h3>Todos los días</h3>
-            <p class="numero">50€</p>
-            <ul>
-              <li>Bocadillos Gratis</li>
-              <li>Todas las Conferencias</li>
-              <li>Todos los Talleres</li>
-            </ul>
-            <a href="#" class="button flex-center">Comprar</a>
-          </div>
-        </li>
+            <li>
+                <div class="tabla-precio">
+                    <h3>Todos los días</h3>
+                    <p class="numero">50€</p>
+                    <ul>
+                        <li>Bocadillos Gratis</li>
+                        <li>Todas las Conferencias</li>
+                        <li>Todos los Talleres</li>
+                    </ul>
+                    <a href="#" class="button flex-center">Comprar</a>
+                </div>
+            </li>
 
-        <li>
-          <div class="tabla-precio">
-            <h3>Pase por 2 días</h3>
-            <p class="numero">45€</p>
-            <ul>
-              <li>Bocadillos Gratis</li>
-              <li>Todas las Conferencias</li>
-              <li>Todos los Talleres</li>
-            </ul>
-            <a href="#" class="button flex-center hollow">Comprar</a>
-          </div>
-        </li>
+            <li>
+                <div class="tabla-precio">
+                    <h3>Pase por 2 días</h3>
+                    <p class="numero">45€</p>
+                    <ul>
+                        <li>Bocadillos Gratis</li>
+                        <li>Todas las Conferencias</li>
+                        <li>Todos los Talleres</li>
+                    </ul>
+                    <a href="#" class="button flex-center hollow">Comprar</a>
+                </div>
+            </li>
 
-      </ul>
+        </ul>
     </div>
-  </section>
+</section>
+
+
+<div id="mapa" class="mapa"></div>
+
+
+<section class="seccion">
+    <h2>Opiniones</h2>
+    <div class="testimonial">
+        <blockquote>
+            <p>Sed mollis velit sit amet felis condimentum ultrices. Fusce vehicula ut sem vitae semper. Nullam blandit neque eu semper ullamcorper. Duis commodo quam in orci condimentum ultricies.</p>
+            <footer>
+                <img src="../build/img/testimonial.jpg" alt="imagen testimonial">
+                <cite>Andres Bernaola Olivares <span>Diseñador en @LekandaNet</span></cite>
+            </footer>
+        </blockquote>
+    </div>
+    <div class="testimonial">
+        <blockquote>
+            <p>Sed mollis velit sit amet felis condimentum ultrices. Fusce vehicula ut sem vitae semper. Nullam blandit neque eu semper ullamcorper. Duis commodo quam in orci condimentum ultricies.</p>
+            <footer>
+                <picture>
+                    <source srcset="../build/img/testimonial.webp" type="image/webp">
+                    <source srcset="../build/img/testimonial.jpg" type="image/jpeg">
+                    <img loading="lazy" src="../build/img/testimonial.jpg" alt="Texto Entrada Blog">
+                </picture>
+                <cite>Andres Bernaola Olivares <span>Diseñador en @LekandaNet</span></cite>
+            </footer>
+        </blockquote>
+    </div>
+    <div class="testimonial">
+        <blockquote>
+            <p>Sed mollis velit sit amet felis condimentum ultrices. Fusce vehicula ut sem vitae semper. Nullam blandit neque eu semper ullamcorper. Duis commodo quam in orci condimentum ultricies.</p>
+            <footer>
+                <picture>
+                    <source srcset="../build/img/testimonial.webp" type="image/webp">
+                    <source srcset="../build/img/testimonial.jpg" type="image/jpeg">
+                    <img loading="lazy" src="../build/img/testimonial.jpg" alt="Texto Entrada Blog">
+                </picture>
+                <cite>Andres Bernaola Olivares <span>Diseñador en @LekandaNet</span></cite>
+            </footer>
+        </blockquote>
+    </div>
+</section>
