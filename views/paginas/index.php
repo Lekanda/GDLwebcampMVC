@@ -85,3 +85,22 @@
         </li>
     </ul>
 </section>
+
+<div class="contador parallax">
+    <div class="contenedor">
+        <ul class="resumen-evento">
+            <li>
+                <p class="numero">6</p>Invitados
+            </li>
+            <li>
+                <p class="numero">15</p>Talleres
+            </li>
+            <li>
+                <p class="numero">3</p>Dias
+            </li>
+            <li>
+                <p class="numero">9</p>Conferencias
+            </li>
+        </ul>
+    </div>
+</div>

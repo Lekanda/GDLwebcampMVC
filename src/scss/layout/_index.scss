@@ -191,3 +191,59 @@
   bottom: -80px;
   opacity: 0;
 }
+
+
+
+
+
+
+
+/* Contador de index */
+.parallax{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+
+  -webkit-filter: brightness(.8);
+  filter: brightness(.8);
+}
+.contador{
+  position: relative;
+  height: auto;
+}
+.contador{
+  background-image: url('../img/bg-resumen.jpg');
+  content: '';/*Siempre que se usa ::before o ::afther hay que poner el content*/
+}
+.resumen-evento{
+  position: relative;
+  padding: 120px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.resumen-evento li{
+  width: 50%;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-family:  'Oswald', sans-serif;
+  font-size: 24px;
+}
+@media only screen and (min-width:768px){
+  .resumen-evento li{
+    width: 25%;
+    text-align: center;
+  }
+}
+.numero{
+  color: #fe4918;
+  font-size: 4em;
+  margin: 0 0 10 0;
+}
