@@ -1,0 +1,61 @@
+/*Seccion Nuestros invitados*/
+.lista-invitados{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .lista-invitados li{
+    padding: 10px;
+  }
+  @include tablet{
+    .lista-invitados{
+      grid-template-columns: 1fr 1fr;
+    }
+    .lista-invitados li{
+      width: 100%;
+    }
+  }
+  @include telefono{
+    .lista-invitados{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .lista-invitados li{
+      width: 100%;
+    }
+  }
+  .invitado{
+    position: relative;
+    overflow: hidden;/*Sí algo se sale lo oculta*/
+  }
+  .invitado img{
+    max-width: 100%;
+    filter: grayscale(1);/* Pone la imagen en blanco y negro */
+    -webkit-filter: grayscale(1);/*Prefijo para chrome*/
+    transition: all .5s ease-in-out;
+  }
+  .invitado img:hover{
+      max-width: 100%;
+      filter: grayscale(0);/*Pone la imagen en color*/
+      -webkit-filter: grayscale(0);/*Pone la imagen en color*/
+      // transform: rotate(3deg);
+      transform: scale(1.1);
+  }
+  .invitado p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px 10px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, .55);
+    width: 100%;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    color: #fe4918;
+    text-transform: uppercase;
+    transition: all .7s ease-in-out;
+  }
+  /* Cuando hago hover sobre .invitado modifico a p */
+  .invitado:hover p {
+    bottom: -80px;
+    opacity: 0;
+  }

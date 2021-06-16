@@ -159,39 +159,41 @@
 
 <section class="seccion">
     <h2>Opiniones</h2>
-    <div class="testimonial">
-        <blockquote>
-            <p>Sed mollis velit sit amet felis condimentum ultrices. Fusce vehicula ut sem vitae semper. Nullam blandit neque eu semper ullamcorper. Duis commodo quam in orci condimentum ultricies.</p>
-            <footer>
-                <img src="../build/img/testimonial.jpg" alt="imagen testimonial">
-                <cite>Andres Bernaola Olivares <span>Diseñador en @LekandaNet</span></cite>
-            </footer>
-        </blockquote>
-    </div>
-    <div class="testimonial">
-        <blockquote>
-            <p>Sed mollis velit sit amet felis condimentum ultrices. Fusce vehicula ut sem vitae semper. Nullam blandit neque eu semper ullamcorper. Duis commodo quam in orci condimentum ultricies.</p>
-            <footer>
-                <picture>
-                    <source srcset="../build/img/testimonial.webp" type="image/webp">
-                    <source srcset="../build/img/testimonial.jpg" type="image/jpeg">
-                    <img loading="lazy" src="../build/img/testimonial.jpg" alt="Texto Entrada Blog">
-                </picture>
-                <cite>Andres Bernaola Olivares <span>Diseñador en @LekandaNet</span></cite>
-            </footer>
-        </blockquote>
-    </div>
-    <div class="testimonial">
-        <blockquote>
-            <p>Sed mollis velit sit amet felis condimentum ultrices. Fusce vehicula ut sem vitae semper. Nullam blandit neque eu semper ullamcorper. Duis commodo quam in orci condimentum ultricies.</p>
-            <footer>
-                <picture>
-                    <source srcset="../build/img/testimonial.webp" type="image/webp">
-                    <source srcset="../build/img/testimonial.jpg" type="image/jpeg">
-                    <img loading="lazy" src="../build/img/testimonial.jpg" alt="Texto Entrada Blog">
-                </picture>
-                <cite>Andres Bernaola Olivares <span>Diseñador en @LekandaNet</span></cite>
-            </footer>
-        </blockquote>
+    <div class="testimoniales contenedor">
+        <div class="testimonial">
+            <blockquote>
+                <p class="txt-blockquote">Sed mollis velit sit amet felis condimentum ultrices. Fusce vehicula ut sem vitae semper. Nullam blandit neque eu semper ullamcorper. Duis commodo quam in orci condimentum ultricies.</p>
+                <footer>
+                    <img src="../build/img/testimonial.jpg" alt="imagen testimonial">
+                    <cite>Andres Bernaola Olivares <span>Diseñador en @LekandaNet</span></cite>
+                </footer>
+            </blockquote>
+        </div>
+        <div class="testimonial">
+            <blockquote>
+                <p class="txt-blockquote">Sed mollis velit sit amet felis condimentum ultrices. Fusce vehicula ut sem vitae semper. Nullam blandit neque eu semper ullamcorper. Duis commodo quam in orci condimentum ultricies.</p>
+                <footer>
+                    <picture>
+                        <source srcset="../build/img/testimonial.webp" type="image/webp">
+                        <source srcset="../build/img/testimonial.jpg" type="image/jpeg">
+                        <img loading="lazy" src="../build/img/testimonial.jpg" alt="Texto Entrada Blog">
+                    </picture>
+                    <cite>Andres Bernaola Olivares <span>Diseñador en @LekandaNet</span></cite>
+                </footer>
+            </blockquote>
+        </div>
+        <div class="testimonial">
+            <blockquote>
+                <p class="txt-blockquote">Sed mollis velit sit amet felis condimentum ultrices. Fusce vehicula ut sem vitae semper. Nullam blandit neque eu semper ullamcorper. Duis commodo quam in orci condimentum ultricies.</p>
+                <footer>
+                    <picture>
+                        <source srcset="../build/img/testimonial.webp" type="image/webp">
+                        <source srcset="../build/img/testimonial.jpg" type="image/jpeg">
+                        <img loading="lazy" src="../build/img/testimonial.jpg" alt="Texto Entrada Blog">
+                    </picture>
+                    <cite>Andres Bernaola Olivares <span>Diseñador en @LekandaNet</span></cite>
+                </footer>
+            </blockquote>
+        </div>
     </div>
 </section>
