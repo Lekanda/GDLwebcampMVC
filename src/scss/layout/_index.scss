@@ -116,7 +116,6 @@
   margin-top: 20px;
   display: flex;
   transition: all .3s ease;
-
   width: 19rem;
 }
 .button:hover{
@@ -126,6 +125,11 @@
   flex-direction: row;
   justify-content: flex-end;
   margin-left: 64%;
+}
+.flex-center{
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 22%;
 }
 
 
@@ -244,7 +248,50 @@
 }
 .precios .numero,
 .parallax .numero{
+  font-family: 'Oswald', sans-serif;
   color: #fe4918;
   font-size: 6rem;
   margin: 0 0 10 0;
+}
+
+
+
+ /*** TABLA de PRECIOS ****/
+ .lista-precios{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+ .lista-precios > li {
+  padding: 10px;
+}
+@media only screen and (min-width:768px){
+  .lista-precios > li {
+    width: 33.3%;
+  }
+}
+.tabla-precio {
+  border: 1px solid #e1e1e1;
+  background-color: #ffffff;
+  padding: 40px 0;
+  text-align:center ;
+}
+.tabla-precio ul li{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #868686;
+  line-height: 26px;
+}
+.tabla-precio h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5rem;
+  font-weight: $bold;
+  color: #fe4918;
+  text-transform: uppercase;
+}
+.tabla-precio p.numero{
+  color: black;
+  margin-top: 20px 0;
 }

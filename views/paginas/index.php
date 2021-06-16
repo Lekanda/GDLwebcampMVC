@@ -119,7 +119,7 @@
               <li>Todas las Conferencias</li>
               <li>Bocadillos todos los Talleres</li>
             </ul>
-            <a href="#" class="button hollow">Comprar</a>
+            <a href="#" class="button flex-center hollow">Comprar</a>
           </div>
         </li>
 
@@ -132,7 +132,7 @@
               <li>Todas las Conferencias</li>
               <li>Bocadillos todos los Talleres</li>
             </ul>
-            <a href="#" class="button">Comprar</a>
+            <a href="#" class="button flex-center">Comprar</a>
           </div>
         </li>
 
@@ -145,7 +145,7 @@
               <li>Todas las Conferencias</li>
               <li>Bocadillos todos los Talleres</li>
             </ul>
-            <a href="#" class="button hollow">Comprar</a>
+            <a href="#" class="button flex-center hollow">Comprar</a>
           </div>
         </li>
 
