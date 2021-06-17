@@ -38,17 +38,18 @@ blockquote .txt-blockquote::before{
 }
 .info-testimonial{
     padding: 0;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
 }
 .info-testimonial img{
     // float: left;
     justify-content: flex-start;
-    width: 64%;
+    width: 50%;
     border-radius: 50%;
     margin-left: 20px;
 }
 .info-testimonial cite {
+    flex-direction: column;
     text-align: left;
     color: #fe4918;
     text-transform: uppercase;
@@ -56,7 +57,7 @@ blockquote .txt-blockquote::before{
     font-weight: bold;
     font-style: normal;
     padding-top: 20px;
-    width: 66.6%;
+    width: 100%;
     flex-direction: row;
     justify-content: flex-start;
     text-align: left;
