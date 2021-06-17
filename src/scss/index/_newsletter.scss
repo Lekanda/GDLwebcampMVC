@@ -1,0 +1,40 @@
+.newsletter{
+    position: relative;
+    height: auto;
+}
+.newsletter{
+    background-image: url(../img/bg-newsletter.jpg);
+    content: '';
+}
+.newsletter {
+    .contenido{
+        padding: 100px 0;
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+    .contenido p{
+        font-size: 2rem;
+        font-weight: bold;
+        color: white;
+        text-transform: lowercase;
+    }
+    .contenido h3{
+        color: #fe4918;
+        text-transform: uppercase;
+        font-size: 7vw;
+        font-family: 'PT Sans', sans-serif;
+    }
+    .transparente {
+        display: inline-block;
+        background-color: transparent;
+        border:2px solid #ffffff;
+        width: 17rem;
+    }
+    .transparente:hover {
+        border: 2px solid #fe4918;
+        background-color: #fe4918;
+        color: white;
+    }
+    
+}

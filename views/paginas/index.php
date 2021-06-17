@@ -206,6 +206,6 @@
     <div class="contenido contenedor">
       <p>Registrate al Newsletter</p>
       <h3>GdlWebCamp</h3>
-      <a href="#" class="button transparente">Registro</a>
+      <a href="#" class="button transparente ">Registro</a>
     </div>
 </div>

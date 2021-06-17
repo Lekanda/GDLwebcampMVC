@@ -169,7 +169,7 @@
   height: auto;
 }
 .contador{
-  background-image: url('../img/bg-resumen.jpg');
+  background-image: url(../img/bg-resumen.jpg);
   content: '';/*Siempre que se usa ::before o ::afther hay que poner el content*/
 }
 .resumen-evento{
