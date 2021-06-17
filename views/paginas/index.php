@@ -215,7 +215,7 @@
 <section class="seccion">
     <h2>Faltan</h2>
     <div class="cuenta-regresiva contenedor">
-        <ul>
+        <ul class="cont-cuenta">
             <li>
                 <p class="numero">80</p>días
             </li>

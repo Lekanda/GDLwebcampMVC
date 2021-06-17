@@ -1,0 +1,16 @@
+/* CUENTA REGRESIVA */
+// .cont-cuenta{
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr 1fr;
+// }
+.cont-cuenta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.cuenta-regresiva ul li{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+}
