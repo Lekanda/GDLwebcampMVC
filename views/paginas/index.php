@@ -204,8 +204,30 @@
 
 <div class="newsletter parallax">
     <div class="contenido contenedor">
-      <p>Registrate al Newsletter</p>
-      <h3>GdlWebCamp</h3>
-      <a href="#" class="button transparente ">Registro</a>
+        <p>Registrate al Newsletter</p>
+        <h3>GdlWebCamp</h3>
+        <a href="#" class="button transparente ">Registro</a>
     </div>
 </div>
+
+
+<!-- REGRESIVA -->
+<section class="seccion">
+    <h2>Faltan</h2>
+    <div class="cuenta-regresiva contenedor">
+        <ul>
+            <li>
+                <p class="numero">80</p>días
+            </li>
+            <li>
+                <p class="numero">15</p>horas
+            </li>
+            <li>
+                <p class="numero">30</p>minutos
+            </li>
+            <li>
+                <p class="numero">20</p>segundos
+            </li>
+        </ul>
+    </div>
+</section>
