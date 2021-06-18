@@ -11,4 +11,10 @@ class PaginaController{
             
         ]);
     }
+    public static function registro(Router $router){
+
+        $router->render('/paginas/registro',[
+            
+        ]);
+    }
 }
