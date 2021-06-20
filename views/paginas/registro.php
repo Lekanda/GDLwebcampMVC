@@ -2,7 +2,7 @@
     <h2>Registro de Usuarios</h2>
     <form id="registro" class="registro" action="registro.html" method="POST">
         <div id="datos-usuario" class="registro caja">
-            <fieldset>
+            <fieldset class="datos-registro">
                 <legend>Datos de Registro</legend>
                 <div class="campo">
                     <label for="nombre">Nombre:</label>
@@ -18,7 +18,6 @@
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" placeholder="Tu Email">
                 </div>
-                <div id="error"></div>
             </fieldset>
 
             <div id="error"></div>
@@ -40,7 +39,7 @@
                         </ul>
                         <div class="orden">
                             <label for="pase_dia">Boletos Deseados:</label>
-                            <input type="number" min="0" id="pase_dia" size="3">
+                            <input type="number" min="0" id="pase_dia" size="3" placeholder="0">
                         </div>
                     </div>
                 </li>
@@ -56,7 +55,7 @@
                         </ul>
                         <div class="orden">
                             <label for="pase-completo">Boletos Deseados:</label>
-                            <input type="number" min="0" id="pase-completo" size="3">
+                            <input type="number" min="0" id="pase-completo" size="3" placeholder="0">
                         </div>
                     </div>
                 </li>
@@ -72,7 +71,7 @@
                         </ul>
                         <div class="orden">
                             <label for="pase_dosdias">Boletos Deseados:</label>
-                            <input type="number" min="0" id="pase_dosdias" size="3">
+                            <input type="number" min="0" id="pase_dosdias" size="3" placeholder="0">
                         </div>
                     </div>
                 </li>
@@ -83,37 +82,37 @@
         <div id="eventos" class="eventos">
             <h3>Elige tus talleres</h3>
             <div class="caja">
-                <div id="viernes" class="contenido-dia">
+                <div id="viernes" class="contenido-dia clearfix">
                     <h4>Viernes</h4>
-                    <div>
-                        <p>Talleres:</p>
-                        <label><input type="checkbox" name="registro[]" id="taller_01" value="taller_01"><time>10:00</time> Responsive y Web Design</label>
-                        <label><input type="checkbox" name="registro[]" id="taller_02" value="taller_02"><time>12:00</time>Flexbox</label>
-                        <label><input type="checkbox" name="registro[]" id="taller_03" value="taller_03"><time>14:00</time> HTML5 y
-                            CSS3</label>
-                        <label><input type="checkbox" name="registro[]" id="taller_04" value="taller_04"><time>17:00</time>
-                            Drupal</label>
-                        <label><input type="checkbox" name="registro[]" id="taller_05" value="taller_05"><time>19:00</time>
-                            WordPress</label>
+                    <div class="talleres">
+                            <p>Talleres:</p>
+                            <label><input type="checkbox" name="registro[]" id="taller_01" value="taller_01"><time>10:00</time> Responsive y Web Design</label>
+                            <label><input type="checkbox" name="registro[]" id="taller_02" value="taller_02"><time>12:00</time>Flexbox</label>
+                            <label><input type="checkbox" name="registro[]" id="taller_03" value="taller_03"><time>14:00</time> HTML5 y
+                                CSS3</label>
+                            <label><input type="checkbox" name="registro[]" id="taller_04" value="taller_04"><time>17:00</time>
+                                Drupal</label>
+                            <label><input type="checkbox" name="registro[]" id="taller_05" value="taller_05"><time>19:00</time>
+                                WordPress</label>
                     </div>
-                    <div>
-                        <p>Conferencias:</p>
-                        <label><input type="checkbox" name="registro[]" id="conf_01" value="conf_01"><time>10:00</time> Como ser
-                            Freelancer</label>
-                        <label><input type="checkbox" name="registro[]" id="conf_02" value="conf_02"><time>17:00</time> Tecnologías del
-                            Futuro</label>
-                        <label><input type="checkbox" name="registro[]" id="conf_03" value="conf_03"><time>19:00</time> Seguridad en la
-                            Web</label>
+                    <div class="conferencias">
+                            <p>Conferencias:</p>
+                            <label><input type="checkbox" name="registro[]" id="conf_01" value="conf_01"><time>10:00</time> Como ser
+                                Freelancer</label>
+                            <label><input type="checkbox" name="registro[]" id="conf_02" value="conf_02"><time>17:00</time> Tecnologías del
+                                Futuro</label>
+                            <label><input type="checkbox" name="registro[]" id="conf_03" value="conf_03"><time>19:00</time> Seguridad en la
+                                Web</label>
                     </div>
-                    <div>
-                        <p>Seminarios:</p>
-                        <label><input type="checkbox" name="registro[]" id="sem_01" value="sem_01"><time>10:00</time> Diseño UI y UX
-                            para móviles</label>
+                    <div class="seminarios">
+                            <p>Seminarios:</p>
+                            <label><input type="checkbox" name="registro[]" id="sem_01" value="sem_01"><time>10:00</time> Diseño UI y UX
+                                para móviles</label>
                     </div>
                 </div>
                 <!--#viernes-->
 
-                <div id="sabado" class="contenido-dia">
+                <div id="sabado" class="contenido-dia clearfix">
                     <h4>Sábado</h4>
                     <div>
                         <p>Talleres:</p>
@@ -149,7 +148,7 @@
                 </div>
                 <!--#sabado-->
 
-                <div id="domingo" class="contenido-dia">
+                <div id="domingo" class="contenido-dia clearfix">
                     <h4>Domingo</h4>
                     <div>
                         <p>Talleres:</p>
