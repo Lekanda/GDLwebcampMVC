@@ -30,7 +30,7 @@
 
                 <li>
                     <div class="tabla-precio">
-                        <h3>Pase por día(Viernes)</h3>
+                        <h3>Pase día (Viernes)</h3>
                         <p class="numero">30€</p>
                         <ul>
                             <li>Bocadillos Gratis</li>
@@ -62,7 +62,7 @@
 
                 <li>
                     <div class="tabla-precio">
-                        <h3>Pase por 2 días(Vie y Sab)</h3>
+                        <h3>Pase 2 días (Vie y Sab)</h3>
                         <p class="numero">45€</p>
                         <ul>
                             <li>Bocadillos Gratis</li>
