@@ -55,7 +55,7 @@
                         </ul>
                         <div class="orden">
                             <label for="pase-completo">Boletos Deseados:</label>
-                            <input type="number" min="0" id="pase-completo" size="3" placeholder="0">
+                            <input type="number" min="0" id="pase_completo" size="3" placeholder="0">
                         </div>
                     </div>
                 </li>
