@@ -47,36 +47,44 @@ h4{
     margin: 10px;
     /* display: none; */
 }
+@include tablet{
+    .contenido-dia{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-flow: 33.3%;
+        column-gap: 37px;
 
-@media only screen and (min-width:768px){
-    .contenido-dia>div{
-      float: left;
-      width: 33.3%;
-      padding: 20px;
+        .talleres{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .conferencias{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .seminarios{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
     }
-  }
-  .contenido-dia>div p{
+}
+.contenido-dia>div p{
     text-align: left;
-  }
-  .contenido-dia>div label{
+}
+.contenido-dia>div label{
     display: block;
     margin-bottom: 10px;
-  }
-  .contenido-dia>div input{
+}
+.contenido-dia>div input{
     margin-right: 10px;
-  }
-  .contenido-dia>div label time {
+}
+.contenido-dia>div label time {
     color: #fe4918;
     font-weight: bold;
-  }
-  .clearfix:before,
-  .clearfix:after {
-    content: " ";
-    /* 1 */
-    display: table;
-    /* 2 */
-  }
-
-  .clearfix:after {
-  clear: both;
 }

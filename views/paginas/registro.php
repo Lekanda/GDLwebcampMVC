@@ -26,11 +26,11 @@
 
         <div id="paquetes" class="paquetes">
             <h3>Elige el numero de Boletos</h3>
-            <ul class="lista-precios clearfix">
+            <ul class="lista-precios">
 
                 <li>
                     <div class="tabla-precio">
-                        <h3>Pase por día (Viernes)</h3>
+                        <h3>Pase por día(Viernes)</h3>
                         <p class="numero">30€</p>
                         <ul>
                             <li>Bocadillos Gratis</li>
@@ -62,7 +62,7 @@
 
                 <li>
                     <div class="tabla-precio">
-                        <h3>Pase por 2 días (Viernes y Sabado)</h3>
+                        <h3>Pase por 2 días(Vie y Sab)</h3>
                         <p class="numero">45€</p>
                         <ul>
                             <li>Bocadillos Gratis</li>
@@ -82,8 +82,8 @@
         <div id="eventos" class="eventos">
             <h3>Elige tus talleres</h3>
             <div class="caja">
-                <div id="viernes" class="contenido-dia clearfix">
-                    <h4>Viernes</h4>
+                <h4>Viernes</h4>
+                <div id="viernes" class="contenido-dia">
                     <div class="talleres">
                             <p>Talleres:</p>
                             <label><input type="checkbox" name="registro[]" id="taller_01" value="taller_01"><time>10:00</time> Responsive y Web Design</label>
@@ -112,9 +112,9 @@
                 </div>
                 <!--#viernes-->
 
-                <div id="sabado" class="contenido-dia clearfix">
-                    <h4>Sábado</h4>
-                    <div>
+                <h4>Sábado</h4>
+                <div id="sabado" class="contenido-dia">
+                    <div class="talleres">
                         <p>Talleres:</p>
                         <label><input type="checkbox" name="registro[]" id="taller_06" value="taller_06"><time>10:00</time>
                             AngularJS</label>
@@ -129,7 +129,7 @@
                         <label><input type="checkbox" name="registro[]" id="taller_11" value="taller_11"><time>21:00</time> PHP Medio y
                             Avanzado</label>
                     </div>
-                    <div>
+                    <div class="conferencias">
                         <p>Conferencias:</p>
                         <label><input type="checkbox" name="registro[]" id="conf_04" value="conf_04"><time>10:00</time> Como crear una
                             tienda online que venda millones en pocos días</label>
@@ -138,7 +138,7 @@
                         <label><input type="checkbox" name="registro[]" id="conf_06" value="conf_06"><time>19:00</time> Pasos para crear
                             un negocio rentable</label>
                     </div>
-                    <div>
+                    <div class="seminarios">
                         <p>Seminarios:</p>
                         <label><input type="checkbox" name="registro[]" id="sem_02" value="sem_02"><time>10:00</time> Aprende a
                             Programar en una mañana</label>
@@ -148,9 +148,9 @@
                 </div>
                 <!--#sabado-->
 
-                <div id="domingo" class="contenido-dia clearfix">
-                    <h4>Domingo</h4>
-                    <div>
+                <h4>Domingo</h4>
+                <div id="domingo" class="contenido-dia">
+                    <div class="talleres">
                         <p>Talleres:</p>
                         <label><input type="checkbox" name="registro[]" id="taller_12" value="taller_12"><time>10:00</time>
                             Laravel</label>
@@ -163,7 +163,7 @@
                         <label><input type="checkbox" name="registro[]" id="taller_16" value="taller_16"><time>19:00</time> Tiendas
                             Virtuales en Magento</label>
                     </div>
-                    <div>
+                    <div class="conferencias">
                         <p>Conferencias:</p>
                         <label><input type="checkbox" name="registro[]" id="conf_07" value="conf_07"><time>10:00</time> Como hacer
                             Marketing en línea</label>
@@ -172,7 +172,7 @@
                         <label><input type="checkbox" name="registro[]" id="conf_09" value="conf_09"><time>19:00</time> Frameworks y
                             librerias Open Source</label>
                     </div>
-                    <div>
+                    <div class="seminarios">
                         <p>Seminarios:</p>
                         <label><input type="checkbox" name="registro[]" id="sem_04" value="sem_04"><time>14:00</time> Creando una App en
                             Android en una tarde</label>
