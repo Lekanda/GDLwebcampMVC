@@ -189,23 +189,21 @@
 
         <div id="resumen" class="resumen">
             <h3>Pagos y Extras</h3>
-            <div class="caja">
+            <div class="caja caja-resumen">
                 <div class="extras">
 
                     <div class="orden">
-                        <label for="camisa-evento">Camisa del Evento 10€<small>(Promocion 7% dto.)</small></label>
+                        <label for="camisa-evento">Camisa del Evento 10€<small>(Promocion 7% dto.)</small></label><br>
                         <input type="number" min="0" id="camisa-evento" size="3" placeholder="0">
                     </div> <!-- Orden -->
-
                     <div class="orden">
-                        <label for="etiquetas">Paquete de 10 Etiquetas 2€<small>(HTML5,CSS3,Javascript,Chrome)</small></label>
+                        <label for="etiquetas">Paquete de 10 Etiquetas 2€<small>(HTML5,CSS3,Javascript,Chrome)</small></label><br>
                         <input type="number" min="0" id="etiquetas" size="3" placeholder="0">
                     </div> <!-- Orden -->
-
                     <div class="orden">
-                        <label for="regallo">Selecciona un regalo</label>
-                        <select id="regalo" required>
-                            <option value="">-- Selecciona un regalo --</option>
+                        <label for="regalo">Selecciona un regalo</label><br>
+                        <select class="option" id="regalo" required>
+                            <option  value="">Selecciona un regalo</option>
                             <option value="ETI">Etiquetas</option>
                             <option value="PUL">Pulsera</option>
                             <option value="PLU">Plumas</option>
@@ -213,7 +211,6 @@
                     </div> <!-- Orden -->
 
                     <input type="button" id="calcular" class="button" value="Calcular">
-
                 </div><!-- Extras -->
 
                 <div class="total">

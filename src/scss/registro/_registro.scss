@@ -88,3 +88,88 @@ h4{
     color: #fe4918;
     font-weight: bold;
 }
+
+
+/*RESUMEN DE REGISTRO*/
+
+.caja-resumen{
+    display: flex;
+    input{
+        display: block;
+        margin: 10px auto ;
+    }
+    p{
+        font-size: 2.1rem;
+        text-transform: uppercase;
+    }
+    .extras{
+        flex-direction: column;
+        width: 60%;
+        margin-left: 2rem;
+
+    }
+    .total{
+        justify-content: flex-end;
+        margin-left: 34rem;
+        width: 50%;
+    }
+   
+    .orden select,
+    .orden input{
+        margin: 10px 5px 0 0;
+        border: 1px solid #fe4918;
+        width: 50%;
+    }
+    
+    .option{
+        font-size: 16px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+// .caja-resumen {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     grid-auto-flow: 33.3%;
+//     column-gap: 37px;
+//     max-width: 110rem;
+
+//     p{
+//         font-size: 2.1rem;
+//         text-transform: uppercase;
+//     }
+//     .extras{
+//         grid-column: 1/2;
+//         grid-row: 1/2;
+//         // display: flex;
+//         // flex-direction: column;
+//         // width: 50%;
+//         // padding: 30px;
+//         .orden{
+            
+//             text-align: left;
+//             margin-bottom: 10px;
+//             input{
+//                 margin: 10px 0 0 0;
+//             }
+//         }
+//     }
+//     .total{
+//         grid-column: 2/3;
+//         grid-row: 1/2;
+//         // display: flex;
+//         // flex-direction: column;
+//         // width: 50%;
+//         // padding: 30px;
+//       }
+// }
