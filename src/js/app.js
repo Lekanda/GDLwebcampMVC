@@ -23,6 +23,7 @@ function eventListeners() {
     const errorDiv = document.getElementById('error');
     const btnRegistro = document.getElementById('btnRegistro');
     const lista_productos = document.getElementById('lista-productos');
+    var suma = document.getElementById('suma-total');
 
     // Extras
     const etiquetas = document.getElementById('etiquetas');
@@ -82,10 +83,15 @@ function eventListeners() {
 
         console.log(listadoProductos);
 
+        lista_productos.style.display="block";
+
         lista_productos.innerHTML = '';
         listadoProductos.forEach(producto => {
             lista_productos.innerHTML += producto + '<br/>';
         });  
+
+        // Total a pagar
+        suma.innerHTML = totalPagar.toFixed(2) + '€';
 
 
       }
