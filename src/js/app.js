@@ -24,6 +24,10 @@ function eventListeners() {
     const btnRegistro = document.getElementById('btnRegistro');
     const resultado = document.getElementById('lista-productos');
 
+    // Extras
+    const etiquetas = document.getElementById('etiquetas');
+    const camisas = document.getElementById('camisa-evento');
+
     calcular.addEventListener('click', calcularTotal);
 
     function calcularTotal(e) {
@@ -35,18 +39,24 @@ function eventListeners() {
         regalo.focus();
       }else{
         // console.log('El regalo es ' + regalo.value);
-        console.log(pase_dia.value);
-        console.log(pase_dosdias.value);
-        console.log(pase_completo.value);
+        // console.log(pase_dia.value);
+        // console.log(pase_dosdias.value);
+        // console.log(pase_completo.value);
         
         // Variables de tipo de entradas
-        const boletosDia = pase_dia.value;
-        const boletos2Dias = pase_dosdias.value;
-        const boletoCompleto = pase_completo.value;
+        const boletosDia = pase_dia.value,
+            boletos2Dias = pase_dosdias.value,
+            boletoCompleto = pase_completo.value,
+            cantCamisas = camisas.value,
+            cantEtiquetas = etiquetas.value;
         
 
         // Total a pagar
-        const totalPagar = (boletosDia * 30) + (boletos2Dias * 45) + (boletoCompleto * 50);
+        const totalPagar =  (boletosDia * 30) +
+                            (boletos2Dias * 45) +
+                            (boletoCompleto * 50) +
+                            ((cantCamisas * 10) * .93) + // Descuento del 7%
+                            (cantEtiquetas * 2);
         console.log(totalPagar);
 
       }
