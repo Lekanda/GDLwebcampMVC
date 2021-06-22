@@ -44,11 +44,11 @@ function eventListeners() {
         // console.log(pase_completo.value);
         
         // Variables de tipo de entradas
-        const boletosDia = pase_dia.value,
-            boletos2Dias = pase_dosdias.value,
-            boletoCompleto = pase_completo.value,
-            cantCamisas = camisas.value,
-            cantEtiquetas = etiquetas.value;
+        const boletosDia = parseInt(pase_dia.value, 10) || 0,
+            boletos2Dias = parseInt(pase_dosdias.value, 10) || 0,
+            boletoCompleto = parseInt(pase_completo.value) || 0,
+            cantCamisas = parseInt(camisas.value) || 0,
+            cantEtiquetas = parseInt(etiquetas.value) || 0;
         
 
         // Total a pagar
