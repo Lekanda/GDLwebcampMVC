@@ -45,32 +45,42 @@ h4{
 .contenido-dia{
     padding: 20px;
     margin: 10px;
-    /* display: none; */
+    display: none;
 }
 @include tablet{
     .contenido-dia{
-        display: grid;
+        // display: none;
         grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto auto;
         grid-auto-flow: 33.3%;
         column-gap: 37px;
 
-        .talleres{
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 1;
-            grid-row-end: 2;
-        }
-        .conferencias{
+        .txtDias{
             grid-column-start: 2;
             grid-column-end: 3;
             grid-row-start: 1;
             grid-row-end: 2;
+            height: 37px;
+
+        }
+
+        .talleres{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .conferencias{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
         }
         .seminarios{
             grid-column-start: 3;
             grid-column-end: 4;
-            grid-row-start: 1;
-            grid-row-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
         }
     }
 }

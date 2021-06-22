@@ -82,8 +82,8 @@
         <div id="eventos" class="eventos">
             <h3>Elige tus talleres</h3>
             <div class="caja">
-                <h4>Viernes</h4>
                 <div id="viernes" class="contenido-dia">
+                    <h4 class="txtDias">Viernes</h4>
                     <div class="talleres">
                             <p>Talleres:</p>
                             <label><input type="checkbox" name="registro[]" id="taller_01" value="taller_01"><time>10:00</time> Responsive y Web Design</label>
@@ -112,8 +112,8 @@
                 </div>
                 <!--#viernes-->
 
-                <h4>Sábado</h4>
                 <div id="sabado" class="contenido-dia">
+                    <h4 class="txtDias">Sábado</h4>
                     <div class="talleres">
                         <p>Talleres:</p>
                         <label><input type="checkbox" name="registro[]" id="taller_06" value="taller_06"><time>10:00</time>
@@ -148,8 +148,8 @@
                 </div>
                 <!--#sabado-->
 
-                <h4>Domingo</h4>
                 <div id="domingo" class="contenido-dia">
+                    <h4 class="txtDias">Domingo</h4>
                     <div class="talleres">
                         <p>Talleres:</p>
                         <label><input type="checkbox" name="registro[]" id="taller_12" value="taller_12"><time>10:00</time>
