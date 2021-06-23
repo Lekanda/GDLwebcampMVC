@@ -1,3 +1,17 @@
+.datos-registro{
+    position: relative;
+}
+#error{
+    position: absolute;
+    left: 106px;
+    top: 50px;
+    font-size: 12px;
+    font-weight: bold;
+    color: red;
+    margin: 4px 10.5px;
+}
+
+
 .registro h3{
     text-align: center;
     text-transform: uppercase;
@@ -148,7 +162,11 @@ h4{
     text-align: center;
     font-size: 2em;
     color: #fe4918;
-  }
+}
+
+#error{
+    clear: both;
+}
 
 
 

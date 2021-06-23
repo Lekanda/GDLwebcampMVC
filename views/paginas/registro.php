@@ -18,9 +18,10 @@
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" placeholder="Tu Email">
                 </div>
+                <div id="error"></div>
             </fieldset>
 
-            <div id="error"></div>
+            
         </div><!-- Fin Datos Usuario -->
 
 
