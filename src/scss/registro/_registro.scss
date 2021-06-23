@@ -1,14 +1,35 @@
 .datos-registro{
     position: relative;
 }
-#error{
+#error-nombre{
     position: absolute;
-    left: 106px;
-    top: 50px;
-    font-size: 12px;
+    left: 79px;
+    top: 56px;
+    font-size: 11px;
     font-weight: bold;
     color: red;
-    margin: 4px 10.5px;
+    margin-left: 25px;
+    display: none;
+}
+#error-apellido{
+    position: absolute;
+    left: 429;
+    top: 56px;
+    font-size: 11px;
+    font-weight: bold;
+    color: red;
+    margin-left: 74px;
+    display: none;
+}
+#error-email{
+    position: absolute;
+    left: 743px;
+    top: 56px;
+    font-size: 11px;
+    font-weight: bold;
+    color: red;
+    margin-left: 37px;
+    display: none;
 }
 
 

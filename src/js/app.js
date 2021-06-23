@@ -20,7 +20,9 @@ function eventListeners() {
 
     // Botones y Divs
     const calcular = document.getElementById('calcular');
-    const errorDiv = document.getElementById('error');
+    const errorNombre = document.getElementById('error-nombre');
+    const errorApellido = document.getElementById('error-apellido');
+    const errorEmail = document.getElementById('error-email');
     const btnRegistro = document.getElementById('btnRegistro');
     const lista_productos = document.getElementById('lista-productos');
     var suma = document.getElementById('suma-total');
@@ -35,23 +37,10 @@ function eventListeners() {
     pase_dosdias.addEventListener('blur',mostrarDias);
     pase_completo.addEventListener('blur',mostrarDias);
 
-
-    nombre.addEventListener('blur', function (){
-      if (this.value == '') {
-        errorDiv.style.display="block";
-        errorDiv.innerHTML = "Tienes que poner un nombre";
-        this.style.border="1px solid red";
-        errorDiv.style.border="1px solid red";
-      }
-    })
-    apellido.addEventListener('blur', function (){
-        if (this.value == '') {
-          errorDiv.style.display="block";
-          errorDiv.innerHTML = "Tienes que poner un apellido";
-          this.style.border="1px solid red";
-          errorDiv.style.border="1px solid red";
-        }
-      })
+    nombre.addEventListener('blur', validarCampos);
+    apellido.addEventListener('blur', validarCampos);
+    email.addEventListener('blur', validarCampos);
+    
 
     function calcularTotal(e) {
       e.preventDefault();
@@ -80,7 +69,7 @@ function eventListeners() {
                             (boletoCompleto * 50) +
                             ((cantCamisas * 10) * .93) + // Descuento del 7%
                             (cantEtiquetas * 2);
-        console.log(totalPagar);
+        // console.log(totalPagar);
 
         const listadoProductos = [];
 
@@ -103,7 +92,7 @@ function eventListeners() {
             listadoProductos.push('Etiquetas Evento: ' + cantEtiquetas);
         }
 
-        console.log(listadoProductos);
+        // console.log(listadoProductos);
 
         lista_productos.style.display="block";
 
@@ -152,4 +141,97 @@ function eventListeners() {
             document.getElementById("viernes").style.display = "none";
         }
     }
+
+
+    function validarCampos() {
+        // Atriibuto #id del campo input.
+        const id = this.getAttribute('id');
+        // Sí esta vacio...
+        if (this.value == '') {
+
+                if (id === 'nombre') {
+                    errorNombre.style.display="block";
+                    errorNombre.innerHTML = "* Nombre obligatorio";
+                    this.style.border="2.5px solid red";
+                    // errorNombre.style.border="2.5px solid red";
+                    errorNombre.style.color="red";
+                    errorApellido.style.display="none";
+                    errorEmail.style.display="none";
+                }
+                if (id === 'apellido') {
+                    errorApellido.style.display="block";
+                    errorApellido.innerHTML = "* El Apellido es obligatorio";
+                    this.style.border="2.5px solid red";
+                    errorApellido.style.color="red";
+                    errorNombre.style.display="none";
+                    errorEmail.style.display="none";
+                }
+                if (id === 'email') {
+                    errorEmail.style.display="block";
+                    errorEmail.innerHTML = "* El Email es obligatorio";
+                    this.style.border="2.5px solid red";
+                    errorEmail.style.color="red";
+                    errorNombre.style.display="none";
+                    errorApellido.style.display="none";
+                }
+
+        }else{ // Esta con datos
+
+            // Nombre no menos de 3 letras.
+            if (id === 'nombre') {
+                if (this.value.length < 3) {
+                        errorNombre.style.display="block";
+                        errorNombre.innerHTML = "* El Nombre 3 letras min.";
+                        errorNombre.style.color="red";
+                        // errorApellido.style.display="none";
+                        // errorEmail.style.display="none";
+                }else {
+                        this.style.border="2.5px solid green";
+                        errorApellido.style.display="none";
+                        errorEmail.style.display="none";
+                        errorNombre.style.display="none";
+                }
+            } 
+
+
+            // Apellido no menos de 3 letras.
+            if (id === 'apellido') {
+                if (this.value.length < 3) {
+                        errorApellido.style.display="block";
+                        errorApellido.innerHTML = "* El Apellido 3 letras min.";
+                        errorApellido.style.color="red";
+                        errorNombre.style.display="none";
+                        errorEmail.style.display="none";
+                }else{
+                        this.style.border="2.5px solid green";
+                        errorApellido.style.display="none";
+                        errorEmail.style.display="none";
+                        errorNombre.style.display="none";
+                    }
+                } 
+                
+                if (id === 'email') {
+                    // console.log('email');
+                    if(this.value.indexOf("@") == -1 || this.value.indexOf(".com") == -1) {
+                    console.log(this.value);
+                    errorEmail.style.display="block";
+                    errorEmail.innerHTML = "* El Email no es valido";
+                    this.style.border = '2px solid red';
+                } else {
+                    errorEmail.style.border = 'none';
+                    this.style.border = '2.5px solid green';
+                    // errorEmail.innerHTML = "";
+                    errorEmail.style.display="none";
+                }
+            }
+        }
+    }
 }
+
+        
+
+    
+
+
+
+
