@@ -7,14 +7,18 @@ document.addEventListener('DOMContentLoaded', function() {
 function eventListeners() {
 
     // Mapa de Leaflet
-    var map = L.map('mapa').setView([43.127173, -2.766173], 13);
+    var map = L.map('mapa').setView([43.127173, -2.766173], 17);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
     L.marker([43.127173, -2.766173]).addTo(map)
-        .bindPopup('Lekanda.Net')
-        .openPopup();
+        // Crea un Pin
+        .bindPopup('Lekanda.Net<br>2021')
+        .openPopup()
+        // Crea una ventana con mensaje al hacer hover en el Pin
+        .bindTooltip('Un Tooltip')
+        .openTooltip();
 
     //*** VARIABLES ***
     // Campos Usuario
