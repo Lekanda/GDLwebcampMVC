@@ -240,11 +240,3 @@ function eventListeners() {
         }
     }
 }
-
-        
-
-    
-
-
-
-
