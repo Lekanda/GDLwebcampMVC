@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
+    pestanas();
     eventListeners();
+
 });
 
 
@@ -40,9 +42,27 @@ function eventListeners() {
     const lista_productos = document.getElementById('lista-productos');
     var suma = document.getElementById('suma-total');
 
+
+
+    // Pestañas 
+    // const talleres = document.getElementById('talleres');
+    // const conferencias = document.getElementById('conferencias');
+    // const seminarios = document.getElementById('seminarios');
+    // const enlacetalleres = document.getElementById('enlace-talleres');
+    // const enlaceconferencias = document.getElementById('enlace-conferencias');
+    // const enlaceseminarios = document.getElementById('enlace-seminarios');
+    
+
+
+
+
     // Extras
     const etiquetas = document.getElementById('etiquetas');
     const camisas = document.getElementById('camisa-evento');
+
+    // enlacetalleres.addEventListener('click', pestanaTaller);
+    // enlaceconferencias.addEventListener('click', pestanaConfe);
+    // enlaceseminarios.addEventListener('click', pestanaSemi);
 
     calcular.addEventListener('click', calcularTotal);
 
@@ -239,4 +259,43 @@ function eventListeners() {
             }
         }
     }
+
+
+    // function pestanaTaller(e) {
+    //     "use strict";
+    //     // e.stopPropagation();
+    //     talleres.style.display="block";
+    //     conferencias.style.display="none";
+    //     seminarios.style.display="none";
+    //     // return false;
+    // }
+    // function pestanaConfe(e) {
+    //     // "use strict";
+    //     // e.stopPropagation();
+    //     talleres.style.display="none";
+    //     conferencias.style.display="block";
+    //     seminarios.style.display="none";
+    //     // return false;
+    // }
+    // function pestanaSemi(e) {
+    //     // "use strict";
+    //     // e.stopPropagation();
+    //     talleres.style.display="none";
+    //     conferencias.style.display="none";
+    //     seminarios.style.display="block";
+    //     // return false;
+    // }
+
 }
+
+
+// function pestanas(e) {
+//     "use strict";
+//     e.stopPropagation();
+//     talleres.style.display="block";
+//     conferencias.style.display="none";
+//     seminarios.style.display="none";
+//     // return false;
+// }
+
+

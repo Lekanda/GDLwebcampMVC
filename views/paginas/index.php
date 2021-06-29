@@ -18,9 +18,9 @@
             <div class="programa-evento">
                 <h2>Programa del Evento</h2>
                 <nav class="menu-programa">
-                    <a href="#talleres"><i class="fas fa-code"></i>Talleres</a>
-                    <a href="#conferencias"><i class="fas fa-comment"></i>Conferencias</a>
-                    <a href="#seminarios"><i class="fas fa-university"></i>Seminarios</a>
+                    <a id="enlace-talleres" href="#talleres"><i class="fas fa-code"></i>Talleres</a>
+                    <a id="enlace-conferencias" href="#conferencias"><i class="fas fa-comment"></i>Conferencias</a>
+                    <a id="enlace-seminarios" href="#seminarios"><i class="fas fa-university"></i>Seminarios</a>
                 </nav>
 
                 <div id="talleres" class="info-curso ocultar">
