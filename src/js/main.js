@@ -300,7 +300,15 @@ $(function(){
     $('.ocultar').hide();
     var enlace = $(this).attr('href');
     // console.log(enlace);
-    $(enlace).fadeIn(1000);
+    $(enlace).fadeIn(500);
     return false;
   });
+
+  $('.resumen-evento li:nth-child(1) p').animateNumber({number:6},1500);
+  $('.resumen-evento li:nth-child(2) p').animateNumber({number:15},1200);
+  $('.resumen-evento li:nth-child(3) p').animateNumber({number:3},600);
+  $('.resumen-evento li:nth-child(4) p').animateNumber({number:9},1500);  
 });
+
+
+
