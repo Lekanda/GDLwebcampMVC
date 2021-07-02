@@ -284,7 +284,11 @@
 
 
 $(function(){
-  // alert('Alerta');
+
+  // Animar letras (Lettering)
+  $('.nombre-sitio').lettering();
+
+
 
   // Programa de conferencias.
   $('.programa-evento .info-curso:first').show();
