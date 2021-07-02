@@ -11,6 +11,12 @@ class PaginaController{
             
         ]);
     }
+    public static function conferencia(Router $router){
+
+        $router->render('/paginas/conferencia',[
+            
+        ]);
+    }
     public static function registro(Router $router){
 
         $router->render('/paginas/registro',[
