@@ -11,6 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    
     <link rel="stylesheet" href="../build/css/app.css">
 
 </head>
@@ -107,17 +108,12 @@
     </footer>
 
 
-
-
-
-
     <script src="http://192.168.2.3/GDLwebcampMVC/public/build/js/bundle.min.js"></script>
-    
     <script src="http://192.168.2.3/GDLwebcampMVC/src/js/plugins.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="http://192.168.2.3/GDLwebcampMVC/src/js/main.js"></script>
     <script src="http://192.168.2.3/GDLwebcampMVC/src/js/jquery.animateNumber.js"></script>
-    
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
 
 </body>
 

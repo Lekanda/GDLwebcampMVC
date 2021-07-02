@@ -1,26 +1,26 @@
 document.addEventListener('DOMContentLoaded', function() {
     // pestanas();
+    
     eventListeners();
 
 });
 
 
-                            
 function eventListeners() {
-
-    // Mapa de Leaflet
     var map = L.map('mapa').setView([43.127173, -2.766173], 17);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
-
+    
     L.marker([43.127173, -2.766173]).addTo(map)
-        // Crea un Pin
-        .bindPopup('Lekanda.Net<br>2021')
+    // Crea un Pin
+    .bindPopup('Lekanda.Net<br>2021')
         .openPopup()
         // Crea una ventana con mensaje al hacer hover en el Pin
         .bindTooltip('Un Tooltip')
         .openTooltip();
+        
+    
 
     //*** VARIABLES ***
     // Campos Usuario
@@ -260,42 +260,4 @@ function eventListeners() {
         }
     }
 
-
-    // function pestanaTaller(e) {
-    //     "use strict";
-    //     // e.stopPropagation();
-    //     talleres.style.display="block";
-    //     conferencias.style.display="none";
-    //     seminarios.style.display="none";
-    //     // return false;
-    // }
-    // function pestanaConfe(e) {
-    //     // "use strict";
-    //     // e.stopPropagation();
-    //     talleres.style.display="none";
-    //     conferencias.style.display="block";
-    //     seminarios.style.display="none";
-    //     // return false;
-    // }
-    // function pestanaSemi(e) {
-    //     // "use strict";
-    //     // e.stopPropagation();
-    //     talleres.style.display="none";
-    //     conferencias.style.display="none";
-    //     seminarios.style.display="block";
-    //     // return false;
-    // }
-
 }
-
-
-// function pestanas(e) {
-//     "use strict";
-//     e.stopPropagation();
-//     talleres.style.display="block";
-//     conferencias.style.display="none";
-//     seminarios.style.display="none";
-//     // return false;
-// }
-
-

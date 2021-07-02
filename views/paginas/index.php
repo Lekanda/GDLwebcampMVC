@@ -249,16 +249,16 @@
     <div class="cuenta-regresiva contenedor">
         <ul class="cont-cuenta">
             <li>
-                <p class="numero">80</p>días
+                <p id="dias" class="numero"></p>días
             </li>
             <li>
-                <p class="numero">15</p>horas
+                <p id="horas" class="numero"></p>horas
             </li>
             <li>
-                <p class="numero">30</p>minutos
+                <p id="minutos" class="numero"></p>minutos
             </li>
             <li>
-                <p class="numero">20</p>segundos
+                <p id="segundos" class="numero"></p>segundos
             </li>
         </ul>
     </div>
