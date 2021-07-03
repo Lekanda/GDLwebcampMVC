@@ -323,6 +323,21 @@ $(function(){
     $('#minutos').html(e.strftime('%M'));
     $('#segundos').html(e.strftime('%S'));
   });
+
+
+  // Nav sigue a Scroll.
+  // Menu NAV con scroll
+  var windowHeight = $(window).height();
+  var barraAltura = $('.barra').innerHeight();
+  console.log(windowHeight);
+  console.log(barraAltura);
+
+  $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    // console.log(scroll);
+  })
+
+
 });
 
 

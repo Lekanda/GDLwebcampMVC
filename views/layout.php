@@ -65,14 +65,7 @@
 
 
 
-
-
     <?php echo $contenido; ?>
-
-
-
-
-
 
 
 
