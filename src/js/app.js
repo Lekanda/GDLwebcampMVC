@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // pestanas();
-    
     eventListeners();
 
 });
@@ -259,5 +257,7 @@ function eventListeners() {
             }
         }
     }
+
+
 
 }

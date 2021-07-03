@@ -52,7 +52,7 @@
                 <span></span>
             </div>
             <nav class="navegacion-principal">
-                <a href="/conferencia">Conferencia</a>
+                <a id="nav-confe" href="/conferencia">Conferencia</a>
                 <a href="#">Calendario</a>
                 <a href="#">Invitado</a>
                 <a href="/registro">Reservas</a>
