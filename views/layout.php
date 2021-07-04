@@ -11,9 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    
     <link rel="stylesheet" href="../build/css/app.css">
-
 </head>
 
 <body>
@@ -44,7 +42,7 @@
     <div class="barra barra-navegacion">
         <div class="contenedor">
             <div class="logo">
-                <img src="../build/img/logo.svg" alt="Logo de la barra de Navegacion">
+                <a href="/"><img src="../build/img/logo.svg" alt="Logo de la barra de Navegacion"></a>
             </div>
             <div class="menu-movil">
                 <span></span>

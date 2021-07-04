@@ -335,6 +335,15 @@ $(function(){
   $(window).scroll(function(){
     var scroll = $(window).scrollTop();
     // console.log(scroll);
+    if (scroll>windowHeight) {
+      // console.log("Rebasado");
+      $('.barra').addClass('fixed');
+      $('body').css({'margin-top':barraAltura + 'px'});
+    } else {
+      // console.log("sin rebasar");
+      $('.barra').removeClass('fixed');
+      $('body').css({'margin-top': '0px'});
+    }
   })
 
 
