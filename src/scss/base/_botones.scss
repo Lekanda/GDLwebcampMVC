@@ -16,3 +16,28 @@
 .boton-verde-block{
     @include boton ($verde, block);
 }
+
+
+// Burger Responsive
+.menu-movil{
+    width: 60px;
+    display: block;
+    float: right;
+    text-align: right;
+    margin-top: 12px;
+    span{
+        height: 10px;
+        margin-bottom: 6px;
+        background-color: white;
+        display: block;
+    }
+}
+@include tablet { /* Celular */
+    .menu-movil{
+        display: none;
+    }
+}
+
+.menu-movil:hover{
+    cursor: pointer;
+}

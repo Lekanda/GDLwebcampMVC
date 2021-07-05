@@ -5,20 +5,21 @@
 
   document.addEventListener('DOMContentLoaded', function () {
 
-    var map = L.map('mapa').setView([43.127173, -2.766173], 17);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
+    if (document.getElementById('mapa')) {
+      var map = L.map('mapa').setView([43.127173, -2.766173], 17);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
 
-    L.marker([43.127173, -2.766173]).addTo(map)
-      // Crea un Pin
-      .bindPopup('Lekanda.Net<br>2021')
-      .openPopup()
-      // Crea una ventana con mensaje al hacer hover en el Pin
-      .bindTooltip('Un Tooltip')
-      .openTooltip();
+      L.marker([43.127173, -2.766173]).addTo(map)
+        // Crea un Pin
+        .bindPopup('Lekanda.Net<br>2021')
+        .openPopup()
+        // Crea una ventana con mensaje al hacer hover en el Pin
+        .bindTooltip('Un Tooltip')
+        .openTooltip();
 
-    var myIcon = L.icon({
+      var myIcon = L.icon({
         iconUrl: '../../img/my-icon.png',
         iconSize: [38, 95],
         iconAnchor: [22, 94],
@@ -26,20 +27,10 @@
         // shadowUrl: '../../img/my-icon-shadow.png',
         // shadowSize: [68, 95],
         // shadowAnchor: [22, 94]
-    });
-    L.marker([43.127173, -2.766173], {icon: myIcon}).addTo(map);
-
-
-    L.control.scale().addTo(map);
-
-
-
-
-
-
-
-
-
+      });
+      L.marker([43.127173, -2.766173], { icon: myIcon }).addTo(map);
+      L.control.scale().addTo(map);
+    }
 
 
 
@@ -289,6 +280,42 @@ $(function(){
   $('.nombre-sitio').lettering();
 
 
+  // Nav sigue a Scroll.
+  // Menu NAV con scroll
+  var windowHeight = $(window).height();
+  var barraAltura = $('.barra').innerHeight();
+  console.log(windowHeight);
+  console.log(barraAltura);
+
+  $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    // console.log(scroll);
+    if (scroll>windowHeight) {
+      // console.log("Rebasado");
+      $('.barra').addClass('fixed');
+      $('body').css({'margin-top':barraAltura + 'px'});
+    } else {
+      // console.log("sin rebasar");
+      $('.barra').removeClass('fixed');
+      $('body').css({'margin-top': '0px'});
+    }
+  });
+
+
+  // Menu Responsive (Burger)
+  
+  var flag = false;
+  $('.menu-movil').on('click', function () {
+    if (flag) {
+      $(".navegacion-principal").hide();
+    } else {
+      $(".navegacion-principal").show();
+    }
+    flag = !flag;
+    
+  });
+
+
 
   // Programa de conferencias.
   $('.programa-evento .info-curso:first').show();
@@ -325,26 +352,7 @@ $(function(){
   });
 
 
-  // Nav sigue a Scroll.
-  // Menu NAV con scroll
-  var windowHeight = $(window).height();
-  var barraAltura = $('.barra').innerHeight();
-  console.log(windowHeight);
-  console.log(barraAltura);
 
-  $(window).scroll(function(){
-    var scroll = $(window).scrollTop();
-    // console.log(scroll);
-    if (scroll>windowHeight) {
-      // console.log("Rebasado");
-      $('.barra').addClass('fixed');
-      $('body').css({'margin-top':barraAltura + 'px'});
-    } else {
-      // console.log("sin rebasar");
-      $('.barra').removeClass('fixed');
-      $('body').css({'margin-top': '0px'});
-    }
-  })
 
 
 });
