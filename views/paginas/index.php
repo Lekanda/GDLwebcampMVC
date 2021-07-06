@@ -186,7 +186,8 @@
 </section>
 
 
-<div id="mapa" class="mapa"></div>
+<div id="map" class="mapa"></div>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
 
 <section class="seccion">

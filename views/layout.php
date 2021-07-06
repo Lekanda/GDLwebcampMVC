@@ -101,7 +101,7 @@
 
     <script src="http://192.168.2.3/GDLwebcampMVC/public/build/js/bundle.min.js"></script>
     <script src="http://192.168.2.3/GDLwebcampMVC/src/js/plugins.js"></script>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
     <script src="http://192.168.2.3/GDLwebcampMVC/src/js/main.js"></script>
     <script src="http://192.168.2.3/GDLwebcampMVC/src/js/jquery.animateNumber.js"></script>
 
